@@ -9,6 +9,10 @@ then you must start virtual env
 ```
 source venv/bin/activate
 ```
+to deactivate the virtual env
+```
+deactivate
+```
 to install the lib, please do
 ```
 pip install -r requirements.txt
