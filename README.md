@@ -5,8 +5,10 @@ you must install virtualenv
 ```
 apt-get install virtualenv
 ```
+
 then you must start virtual env 
 ```
+virtualenv -p python3 venv
 source venv/bin/activate
 ```
 to deactivate the virtual env
