@@ -17,17 +17,6 @@ def print_help():
     "drstone = dr-stone\n" +
     "tpn = the-promised-neverland\n" +
     "anima = anima\n" +
-    "ft = fairy-tail-100-years-quest\n" +
-    "op = one-piece\n" +
-    "boruto = boruto\n" +
-    "mha = my-hero-academia\n" +
-    "hxh = hunterx-hunter\n" +
-    "bcl = black-clover\n" +
-    "kdom = kingdom\n" +
-    "drstone = dr-stone\n" +
-    "tpn = the-promised-neverland\n" +
-    "anima = anima\n" +
-    "ft = fairy-tail-100-years-quest\n")
 
 def isName(str):
     op = "one-piece"
