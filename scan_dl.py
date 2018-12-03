@@ -96,9 +96,20 @@ url = "https://scan-france.com" + "/" + manga
 soup = dorRequestOnUrl(url)
 hrefs = getHrefFromSoup(soup)
 
-if (chapitre < 1 or chapitre > len(hrefs)):
+splited = hrefs[len(hrefs) - 1].split('/');
+ch_max = int(splited[len(splited) - 2])
+
+if (chapitre < 1 or chapitre > ch_max):
     print("Error: Ce chapitre n'existe pas")
     exit(-1)
+
+i = 0
+for href in hrefs:
+    print(i)
+    if(href.find(str(chapitre)) != -1):
+        chapitre = i
+        break
+    i += 1
 
 url = "https:" + hrefs[chapitre]
 soup = dorRequestOnUrl(url)
